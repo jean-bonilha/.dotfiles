@@ -1,0 +1,90 @@
+[user]
+	name 	= Jean Bonilha
+	email 	= jeanbonilha.webdev@gmail.com
+[alias]
+	a  = add
+	ap = add --patch
+
+	b  = branch
+	ba = branch -a
+	br = branch
+
+	s  = status -sb
+	st = status
+
+	co 	= checkout
+	cob 	= checkout -b
+
+	ci 	= commit
+	ci 	= commit
+	civ	= commit --verbose
+	cim	= commit -m
+	ciam 	= commit -a -m
+	ciamend = commit -a -m --amend --verbose
+
+	df 	= diff
+	dlc 	= diff --cached HEAD^
+
+	pu 	= push
+	me 	= merge
+	be 	= branch --edit-description
+	f  	= !git ls-files | grep -i
+
+	ls 		= log --oneline --decorate -38
+	ll 		= log --pretty=format:\"%C(yellow)%h%Cred%d\\\\ %Creset%s%Cblue\\\\ [%cn]\" --decorate --numstat
+	ld 		= log --pretty=format:"%C(yellow)%h\\ %ad%Cred%d\\ %Creset%s%Cblue\\ [%cn]" --decorate --date=relative
+	le 		= log --oneline --decorate
+	fl 		= log -u
+	dl 		= !git ll -1
+	lg 		= log --pretty=format:"%C(yellow)%h\\ %ad%Cred%d\\ %Creset%s%Cblue\\ [%cn]" --decorate --date=short -43
+	lsd 		= log --pretty=format:"%C(yellow)%h%Cred%d\\ %Creset%s%Cblue\\ [%cn]" --decorate
+	lnc 		= log --pretty=format:"%h\\ %s\\ [%cn]"
+	lds 		= log --pretty=format:"%C(yellow)%h\\ %ad%Cred%d\\ %Creset%s%Cblue\\ [%cn]" --decorate --date=short
+	hist 		= log --pretty=format:\"%h %ad | %s%d [%an]\" --graph --date=short -43
+	filelog 	= log -u
+
+	exec = "!f() { \
+		echo "Executa alguma coisa..."; \
+	}; f"
+
+	dr  		= "!f() { git diff "$1"^.."$1"; }; f"
+	lc  		= "!f() { git ll "$1"^.."$1"; }; f"
+	gra 		= "!f() { A=$(pwd) && TOPLEVEL=$(git rev-parse --show-toplevel) && cd $TOPLEVEL && git grep --full-name -In $1 | xargs -I{} echo $TOPLEVEL/{} && cd $A; }; f"
+	ours 		= "!f() { git co --ours $@ && git add $@; }; f"
+	done 		= "!f() { git branch | grep "$1" | cut -c 3- | grep -v done | xargs -I{} git branch -m {} done-{}; }; f"
+	diffr  		= "!f() { git diff "$1"^.."$1"; }; f"
+	theirs 		= "!f() { git co --theirs $@ && git add $@; }; f"
+
+	feat  		= "!f() { git flow feature "$1" "$2"; }; f"
+
+	gr 	= grep -Ii
+	grep 	= grep -Ii
+
+	tags 	= tag -l
+
+	la 	= !git config -l | grep alias | cut -c 7-
+	alias 	= !git config -l | grep alias | cut -c 7-
+
+	assume 		= update-index --assume-unchanged
+	unassume 	= update-index --no-assume-unchanged
+	assumed 	= !git ls-files -v | grep ^h | cut -c 3-
+	unassumeall 	= !git assumed | xargs git update-index --no-assume-unchanged
+	assumeall 	= !git st -s | awk {'print $2'} | xargs git assume
+
+	lt 	= describe --tags --abbrev=0
+	lasttag = describe --tags --abbrev=0
+
+	r 	= reset
+	r1 	= reset HEAD^
+	r2 	= reset HEAD^^
+	rh 	= reset --hard
+	rh1 	= reset HEAD^ --hard
+	rh2 	= reset HEAD^^ --hard
+
+	svnr = svn rebase
+	svnd = svn dcommit
+	svnl = svn log --oneline --show-commit
+
+	sl = stash list
+	sa = stash apply
+	ss = stash save
