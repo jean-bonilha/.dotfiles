@@ -95,6 +95,7 @@ alias xclip='xclip -selection c'
 alias kbbr='setxkbmap us,br'
 alias kbus='setxkbmap br,us'
 alias cat='cat -n'
+alias mux='tmuxinator'
 
 # Add an "alert" alias for long running commands.  Use like so:
 #   sleep 10; alert
