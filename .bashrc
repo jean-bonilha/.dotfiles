@@ -127,4 +127,5 @@ export NVM_DIR="$HOME/.nvm"
 
 export EDITOR=vim
 export VISUAL=vim
+export PATH="$(yarn global bin):$PATH"
 
