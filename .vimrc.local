@@ -1,0 +1,6 @@
+nnoremap j jzz
+nnoremap <Down> jzz
+nnoremap k kzz
+nnoremap <Up> kzz
+nnoremap G Gzz
+let g:minimap_highlight='MoreMsg'
