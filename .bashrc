@@ -94,7 +94,7 @@ alias l='ls -CF'
 alias xclip='xclip -selection c'
 alias kbbr='setxkbmap us,br'
 alias kbus='setxkbmap br,us'
-alias cat='cat -n'
+alias catn='cat -n'
 alias mux='tmuxinator'
 
 # Add an "alert" alias for long running commands.  Use like so:
@@ -129,3 +129,6 @@ export EDITOR=vim
 export VISUAL=vim
 export PATH="$(yarn global bin):$PATH"
 
+[ -f ~/.fzf.bash ] && source ~/.fzf.bash
+
+alias dotfiles='/usr/bin/git --git-dir=/home/jeanbonilha/.dotfiles/ --work-tree=/home/jeanbonilha'
