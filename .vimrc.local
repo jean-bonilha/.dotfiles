@@ -4,3 +4,7 @@ nnoremap k kzz
 nnoremap <Up> kzz
 nnoremap G Gzz
 let g:minimap_highlight='MoreMsg'
+
+" emmet-vim settings
+let g:user_emmet_mode='a'    "enable all function in all mode.
+let g:user_emmet_expandabbr_key='<Tab>'
