@@ -96,6 +96,8 @@ alias kbbr='setxkbmap us,br'
 alias kbus='setxkbmap br,us'
 alias catn='cat -n'
 alias mux='tmuxinator'
+alias ter='gnome-terminal --hide-menubar --full-screen && exit'
+alias dotfiles='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
 
 # Add an "alert" alias for long running commands.  Use like so:
 #   sleep 10; alert
@@ -130,5 +132,3 @@ export VISUAL=vim
 export PATH="$(yarn global bin):$PATH"
 
 [ -f ~/.fzf.bash ] && source ~/.fzf.bash
-
-alias dotfiles='/usr/bin/git --git-dir=/home/jeanbonilha/.dotfiles/ --work-tree=/home/jeanbonilha'
