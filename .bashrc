@@ -96,7 +96,7 @@ alias kbbr='setxkbmap us,br'
 alias kbus='setxkbmap br,us'
 alias catn='cat -n'
 alias mux='tmuxinator'
-alias ter='gnome-terminal --hide-menubar --full-screen && exit'
+alias maxwindow='gnome-terminal --hide-menubar --full-screen && exit'
 alias dotfiles='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
 
 # Add an "alert" alias for long running commands.  Use like so:
