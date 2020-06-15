@@ -2,9 +2,12 @@ nnoremap j jzz
 nnoremap <Down> jzz
 nnoremap k kzz
 nnoremap <Up> kzz
+nnoremap n nzz
+nnoremap N Nzz
 nnoremap G Gzz
 nnoremap \| V$%
 vnoremap \| $%
+
 let g:minimap_highlight='MoreMsg'
 
 " emmet-vim settings

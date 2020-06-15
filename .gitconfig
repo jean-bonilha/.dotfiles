@@ -19,6 +19,7 @@
 	ci 	= commit
 	civ	= commit --verbose
 	cim	= commit -m
+	ciae = commit -a -e
 	ciam 	= commit -a -m
 	ciamend = commit -a -m --amend --verbose
 

@@ -99,6 +99,7 @@ alias mux='tmux'
 alias inator='tmuxinator'
 alias maxwindow='gnome-terminal --hide-menubar --full-screen && exit'
 alias dotfiles='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
+alias dev='inator default'
 
 # Add an "alert" alias for long running commands.  Use like so:
 #   sleep 10; alert
