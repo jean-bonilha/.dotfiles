@@ -97,7 +97,7 @@ alias kbus='setxkbmap br,us'
 alias catn='cat -n'
 alias mux='tmux'
 alias inator='tmuxinator'
-alias maxwindow='gnome-terminal --hide-menubar --full-screen && exit'
+alias maxwindow='gnome-terminal --hide-menubar --full-screen --window -e tmux && exit'
 alias dotfiles='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
 alias dev='inator default'
 
