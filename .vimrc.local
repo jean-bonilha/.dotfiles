@@ -5,6 +5,7 @@ nnoremap <Up> kzz
 nnoremap n nzz
 nnoremap N Nzz
 nnoremap G Gzz
+nnoremap <C-a> ggVG
 nnoremap \| V$%
 vnoremap \| $%
 
