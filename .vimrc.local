@@ -7,9 +7,25 @@ nnoremap N Nzz
 nnoremap G Gzz
 nnoremap \| V$%
 vnoremap \| $%
+"Remove all trailing whitespace by pressing F5
+nnoremap <F5> :%s/\s\+$//e
 
 let g:minimap_highlight='MoreMsg'
 
 " emmet-vim settings
-let g:user_emmet_mode='a'    "enable all function in all mode.
+let g:user_emmet_mode='a'
+"enable all function in all mode.
 let g:user_emmet_expandabbr_key='<Tab>'
+
+function! MHead() abort
+  g/<<<<<<</d
+  g/=======/ .,/>>>>>>>/d
+  w
+  bprevious
+endfunction
+function! MCurrent() abort
+  g/<<<<<<</ .,/=======/d
+  g/>>>>>>>/d
+  w
+  bprevious
+endfunction
