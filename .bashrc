@@ -133,4 +133,8 @@ export EDITOR=vim
 export VISUAL=vim
 export PATH="$(yarn global bin):$PATH"
 
+export http_proxy=http://10.58.0.50:8080
+export https_proxy=http://10.58.0.50:8080
+export ftp_proxy=http://10.58.0.50:8080
+
 [ -f ~/.fzf.bash ] && source ~/.fzf.bash
