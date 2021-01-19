@@ -94,4 +94,4 @@
 [https]
 	proxy = http://10.58.0.50:8080
 [core]
-	autocrlf = true
+	autocrlf = input
