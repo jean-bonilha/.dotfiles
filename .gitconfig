@@ -95,3 +95,4 @@
 	proxy = http://10.58.0.50:8080
 [core]
 	autocrlf = input
+	whitespace = cr-at-eol
