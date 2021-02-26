@@ -137,4 +137,6 @@ export http_proxy=http://10.58.0.50:8080
 export https_proxy=http://10.58.0.50:8080
 export ftp_proxy=http://10.58.0.50:8080
 
+export PATH=$HOME/bin:$PATH
+
 [ -f ~/.fzf.bash ] && source ~/.fzf.bash
