@@ -147,3 +147,8 @@ export HTTPS_PROXY="/"
 # Debian 10 CAL-COMP setup
 
 [ -f ~/.fzf.bash ] && source ~/.fzf.bash
+
+tmux ls &> /dev/null
+if [ "$?" = 1 ]; then
+  tmux
+fi
