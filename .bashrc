@@ -132,5 +132,18 @@ export NVM_DIR="$HOME/.nvm"
 export EDITOR=vim
 export VISUAL=vim
 export PATH="$(yarn global bin):$PATH"
+# Debian 10 CAL-COMP setup
+export PATH="$HOME/.local/bin:$PATH"
+export http_proxy="http://10.58.0.50:8080/"
+export ftp_proxy="ftp://10.58.0.50:8080/"
+export rsync_proxy="rsync://10.58.0.50:8080/"
+export no_proxy="_no_proxy"
+export HTTP_PROXY="http://10.58.0.50:8080/"
+export FTP_PROXY="ftp://10.58.0.50:8080/"
+export RSYNC_PROXY="rsync://10.58.0.50:8080/"
+export NO_PROXY="_no_proxy"
+export https_proxy="http://10.58.0.50:8080/"
+export HTTPS_PROXY="/"
+# Debian 10 CAL-COMP setup
 
 [ -f ~/.fzf.bash ] && source ~/.fzf.bash
