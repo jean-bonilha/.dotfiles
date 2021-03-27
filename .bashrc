@@ -143,7 +143,6 @@ export FTP_PROXY="ftp://10.58.0.50:8080/"
 export RSYNC_PROXY="rsync://10.58.0.50:8080/"
 export NO_PROXY="_no_proxy"
 export https_proxy="http://10.58.0.50:8080/"
-export HTTPS_PROXY="/"
 # Debian 10 CAL-COMP setup
 
 [ -f ~/.fzf.bash ] && source ~/.fzf.bash
