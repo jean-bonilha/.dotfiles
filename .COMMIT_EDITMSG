@@ -2,25 +2,12 @@
 
 [optional body]
 
-[optional footer]
-
-# A properly formed Git commit subject line should always be able to complete
-# the following sentence:
-#     * If applied, this commit <will your subject line here>
-#
-# ** Example:
-# [tag](optional scope): [subject]
-#
-# [optional body]
-#
-# [optional footer]
-
 # ** Tag
 # Must be one of the following:
 # * start - Start a feature/hotfix/bugfix/support/release branch
 # * end - Finish a feature/hotfix/bugfix/support/release branch
-# * ci - Continue a feature/hotfix/bugfix/support/release branch
-# * merge - Build merge commit
+# * commit - Make commit in the feature/hotfix/bugfix/support/release branch
+# * merge [tag|branch] - Build merge commit
 # * release - Build release commit
 # * revert - Reverting things
 
