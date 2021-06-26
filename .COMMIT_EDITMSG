@@ -1,13 +1,11 @@
-[branch name](tag[|tag]...): [subject]
+[branch name]([tag]):[subject]
 
 [optional body]
 
 # ** Tag
 # Must be one of the following:
-# * start - Start a feature/hotfix/bugfix/support/release branch
-# * end - Finish a feature/hotfix/bugfix/support/release branch
-# * commit - Make commit in the feature/hotfix/bugfix/support/release branch
-# * merge [tag|branch] - Build merge commit
+# * commit:[index] - Make any commit with index in any branch
+# * merge [tag|branch] - Make a merge from tag or branch
 # * release - Build release commit
 # * revert - Reverting things
 
