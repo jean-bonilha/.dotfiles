@@ -1,0 +1,44 @@
+[branch name](tag[|tag]...): [subject]
+
+[optional body]
+
+[optional footer]
+
+# A properly formed Git commit subject line should always be able to complete
+# the following sentence:
+#     * If applied, this commit <will your subject line here>
+#
+# ** Example:
+# [tag](optional scope): [subject]
+#
+# [optional body]
+#
+# [optional footer]
+
+# ** Tag
+# Must be one of the following:
+# * start - Start a feature/hotfix/bugfix/support/release branch
+# * end - Finish a feature/hotfix/bugfix/support/release branch
+# * ci - Continue a feature/hotfix/bugfix/support/release branch
+# * merge - Build merge commit
+# * release - Build release commit
+# * revert - Reverting things
+
+# ** Subject
+# The subject contains a succint description of the change:
+# * Use the imperative, present tense: "change" not "changed" nor "changes"
+# * No dot (.) at the end.
+
+# ** Body
+# Just as in the subject, use the imperative, present tense: "change" not "changed" nor "changes".
+# The body should include the motivation for the change and contrast this with previous behavior.
+
+# ** Rules
+# The 7 rules of a great commit message
+#    1. Separate subject from body with a blank line
+#    2. Limit the subject line to 50 characters
+#    3. Summary in present tense. Not capitalized
+#    4. Do not end the subject line with a period
+#    5. Use the imperative mood in the subject line
+#    6. Wrap the body at 72 characters
+#    7. Use the body to explain what and why vs. how
