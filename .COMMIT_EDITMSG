@@ -42,3 +42,7 @@
 #    5. Use the imperative mood in the subject line
 #    6. Wrap the body at 72 characters
 #    7. Use the body to explain what and why vs. how
+
+# ** Source
+# Patterns for writing better git commit messages
+# Link: https://dev.to/hlderburato/paterns-for-writing-better-git-commit-messages-4ba0
