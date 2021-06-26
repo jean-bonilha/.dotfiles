@@ -137,13 +137,15 @@ export PATH="$HOME/.local/bin:$PATH"
 export http_proxy="http://10.58.0.50:8080/"
 export ftp_proxy="ftp://10.58.0.50:8080/"
 export rsync_proxy="rsync://10.58.0.50:8080/"
-export no_proxy="_no_proxy"
+export no_proxy="10.*;192.168.*;172.16.*;172.21.*;172.25.*;200.174.29.177-190;200.174.156.49-62;179.191.237.161-174;*.cal-comp.*;*.calcomp.*;*.kinpo.*;*.kinpogroup.*;*.newkinpo.*;*.newkinpogroup.*;*.nkg.*;*.policiafederal.gov.br;*.dpf.gov.br;*.pf.gov.br;*.e2open.com"
 export HTTP_PROXY="http://10.58.0.50:8080/"
 export FTP_PROXY="ftp://10.58.0.50:8080/"
 export RSYNC_PROXY="rsync://10.58.0.50:8080/"
-export NO_PROXY="_no_proxy"
-export https_proxy="http://10.58.0.50:8080/"
-# Debian 10 CAL-COMP setup
+export NO_PROXY="10.*;192.168.*;172.16.*;172.21.*;172.25.*;200.174.29.177-190;200.174.156.49-62;179.191.237.161-174;*.cal-comp.*;*.calcomp.*;*.kinpo.*;*.kinpogroup.*;*.newkinpo.*;*.newkinpogroup.*;*.nkg.*;*.policiafederal.gov.br;*.dpf.gov.br;*.pf.gov.br;*.e2open.com"
+export https_proxy="10.58.0.50:8080/"
+export HTTPS_PROXY="10.58.0.50:8080/"
+# Gitlab environment
+export GITLAB_HOME=/srv/gitlab
 
 [ -f ~/.fzf.bash ] && source ~/.fzf.bash
 
