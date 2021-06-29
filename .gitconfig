@@ -1,6 +1,8 @@
 [user]
 	name 	= Jean Bonilha
 	email 	= jeanbonilha.webdev@gmail.com
+[core]
+	editor  = vim
 [alias]
 	a  = add
 	ap = add --patch
