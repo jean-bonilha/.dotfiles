@@ -41,7 +41,7 @@
 	lsd 		= log --pretty=format:"%C(yellow)%h%Cred%d\\ %Creset%s%Cblue\\ [%cn]" --decorate
 	lnc 		= log --pretty=format:"%h\\ %s\\ [%cn]"
 	lds 		= log --pretty=format:"%C(yellow)%h\\ %ad%Cred%d\\ %Creset%s%Cblue\\ [%cn]" --decorate --date=short
-	hist 		= log --pretty=format:\"%h %ad | %s%d [%an]\" --graph --date=short -43
+	history = log --pretty=format:"%C(yellow)%h%Creset\\ |\\ %Cgreen%s%Creset\\ |%Cred%d%Cblue\\ [%an]" --graph
 	filelog 	= log -u
 
 	exec = "!f() { \
