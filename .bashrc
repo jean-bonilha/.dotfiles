@@ -95,7 +95,7 @@ alias xclip='xclip -selection c'
 alias kbbr='setxkbmap us,br'
 alias kbus='setxkbmap br,us'
 alias catn='cat -n'
-alias mux='tmux'
+alias mux='tmux attach'
 alias inator='tmuxinator'
 alias maxwindow='gnome-terminal --hide-menubar --full-screen --window -e tmux && exit'
 alias dotfiles='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
@@ -134,16 +134,6 @@ export VISUAL=vim
 export PATH="$(yarn global bin):$PATH"
 # Debian 10 CAL-COMP setup
 export PATH="$HOME/.local/bin:$PATH"
-export http_proxy="http://10.58.0.50:8080/"
-export ftp_proxy="ftp://10.58.0.50:8080/"
-export rsync_proxy="rsync://10.58.0.50:8080/"
-export no_proxy="10.*;192.168.*;172.16.*;172.21.*;172.25.*;200.174.29.177-190;200.174.156.49-62;179.191.237.161-174;*.cal-comp.*;*.calcomp.*;*.kinpo.*;*.kinpogroup.*;*.newkinpo.*;*.newkinpogroup.*;*.nkg.*;*.policiafederal.gov.br;*.dpf.gov.br;*.pf.gov.br;*.e2open.com"
-export HTTP_PROXY="http://10.58.0.50:8080/"
-export FTP_PROXY="ftp://10.58.0.50:8080/"
-export RSYNC_PROXY="rsync://10.58.0.50:8080/"
-export NO_PROXY="10.*;192.168.*;172.16.*;172.21.*;172.25.*;200.174.29.177-190;200.174.156.49-62;179.191.237.161-174;*.cal-comp.*;*.calcomp.*;*.kinpo.*;*.kinpogroup.*;*.newkinpo.*;*.newkinpogroup.*;*.nkg.*;*.policiafederal.gov.br;*.dpf.gov.br;*.pf.gov.br;*.e2open.com"
-export https_proxy="10.58.0.50:8080/"
-export HTTPS_PROXY="10.58.0.50:8080/"
 # Gitlab environment
 export GITLAB_HOME=/srv/gitlab
 

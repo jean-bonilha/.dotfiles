@@ -26,6 +26,7 @@
 	ciamend = commit -a -m --amend --verbose
 
 	df 	= diff
+	ds	= diff --staged
 	dlc 	= diff --cached HEAD^
 
 	pu 	= push
@@ -91,9 +92,5 @@
 	sl = stash list
 	sa = stash apply
 	ss = stash save
-[http]
-	proxy = http://10.58.0.50:8080/
-[https]
-	proxy = http://10.58.0.50:8080/
 [commit]
 	template = ~/.COMMIT_EDITMSG
