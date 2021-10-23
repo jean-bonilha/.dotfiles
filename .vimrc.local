@@ -22,6 +22,16 @@ let g:user_emmet_expandabbr_key='<Tab>'
 let g:coc_disable_startup_warning = 1 " disable to show avoid message error
 let g:coc_user_config = {}
 let g:coc_user_config['coc.preferences.jumpCommand'] = ':SplitIfNotOpen4COC'
+
 nmap <silent> gd :call CocAction('jumpDefinition', 'vsplit')<CR>
 nmap <silent> GD :call CocAction('jumpDefinition', 'split')<CR>
 nmap <silent> gt :call CocAction('jumpDefinition', 'tabe')<CR>
+nmap <silent> ge :call CocAction('jumpDefinition', 'e')<CR>
+
+nmap <silent> so :source ~/.vimrc.local<CR>
+nmap <silent> sp :vsplit<CR>
+nmap <silent> sP :split<CR>
+nmap <silent> SP :split<CR>
+
+nmap <silent> bp :bprevious<CR>
+nmap <silent> bn :bnext<CR>
