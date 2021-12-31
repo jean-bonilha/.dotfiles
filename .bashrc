@@ -134,5 +134,6 @@ export VISUAL=vim
 export PATH="$(yarn global bin):$PATH"
 
 export PATH=$HOME/bin:$PATH
+export PATH=$PATH:/usr/local/go/bin
 
 [ -f ~/.fzf.bash ] && source ~/.fzf.bash
