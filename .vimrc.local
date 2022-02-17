@@ -11,6 +11,10 @@ nnoremap <F3> :%s#\($\n\s*\)\+\%$##<CR>
 nnoremap <F4> :%s/\(^\s*$\n\)\{2,\}/\r/g<CR>
 nnoremap <F5> :%s/\s\+$//e<CR>
 nnoremap <C-m> :set ff=unix<CR>
+nnoremap so :source ~/.vimrc.local<CR>
+nnoremap sp :vsp<CR>
+nnoremap sP :sp<CR>
+nnoremap se :e<CR>
 vnoremap \| $%
 
 let g:minimap_highlight='MoreMsg'
