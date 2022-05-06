@@ -6,12 +6,18 @@ nnoremap n nzz
 nnoremap N Nzz
 nnoremap G Gzz
 nnoremap \| V$%
+nnoremap s :w<CR>
 vnoremap \| $%
 
 execute "set <M-h>=\eh"
 execute "set <M-l>=\el"
 nnoremap <M-h> :tabprevious<CR>
 nnoremap <M-l> :tabnext<CR>
+nnoremap <F2> zr :vsplit ~/.vimrc.local<CR>
+nnoremap <F4> :!clear && echo "formating % file" && go fmt %<CR>
+nnoremap <F8> :!clear && go run %<CR>
+nnoremap <F9> :!clear && go run .<CR>
+nnoremap Q :q<CR>
 
 let g:minimap_highlight='MoreMsg'
 
@@ -33,5 +39,20 @@ nmap <silent> sp :vsplit<CR>
 nmap <silent> sP :split<CR>
 nmap <silent> SP :split<CR>
 
+nmap <silent> st :tabnew<CR>
+nmap <silent> nt :tabnew<CR>
+
 nmap <silent> bp :bprevious<CR>
 nmap <silent> bn :bnext<CR>
+
+nmap <silent> t4 :set autoindent noexpandtab tabstop=4 shiftwidth=4 ts=4 sw=4<CR>
+nmap <silent> t2 :set autoindent noexpandtab tabstop=2 shiftwidth=2 ts=2 sw=2<CR>
+
+nmap <silent> se :e %<CR>
+nmap <silent> ; :e %<CR>
+nmap <silent> sf :e %<CR>
+
+nmap <silent> ga :!clear && git a % && echo "Arquivo % adicionado a stage area."<CR>
+nmap <silent> GA :!clear && git a . && echo "Todos os arquivos adicionados a stage area."<CR>
+nmap <silent> gs :!clear && git st<CR>
+nmap <silent> gc :!clear && git ci -m "

@@ -58,6 +58,7 @@
 	done 		= "!f() { git branch | grep "$1" | cut -c 3- | grep -v done | xargs -I{} git branch -m {} done-{}; }; f"
 	diffr  		= "!f() { git diff "$1"^.."$1"; }; f"
 	theirs 		= "!f() { git co --theirs $@ && git add $@; }; f"
+	grepfiles 		= "!f() { git grep $@ | awk -F: '{print "$1"}' | sort -u; }; f"
 
 	feat  		= "!f() { git flow feature "$1" "$2"; }; f"
 
