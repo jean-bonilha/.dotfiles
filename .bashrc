@@ -133,7 +133,8 @@ export EDITOR=vim
 export VISUAL=vim
 export PATH="$(yarn global bin):$PATH"
 
-export PATH=$HOME/bin:$PATH
+export PATH=$HOME/go/bin:$PATH
 export PATH=$PATH:/usr/local/go/bin
+export GITLAB_HOME=/srv/gitlab
 
 [ -f ~/.fzf.bash ] && source ~/.fzf.bash
