@@ -141,7 +141,7 @@ export GITLAB_HOME=/srv/gitlab
 export PATH=$PATH:/usr/local/go/bin
 export PATH=$PATH:/go/bin
 export GOROOT=/usr/local/go
-export GOPATH=/home/$HOME/go
+export GOPATH=$HOME/go
 
 [ -f ~/.fzf.bash ] && source ~/.fzf.bash
 
