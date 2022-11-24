@@ -56,3 +56,7 @@ nmap <silent> ga :!clear && git a % && echo "Arquivo % adicionado a stage area."
 nmap <silent> GA :!clear && git a . && echo "Todos os arquivos adicionados a stage area."<CR>
 nmap <silent> gs :!clear && git st<CR>
 nmap <silent> gc :!clear && git ci -m "
+
+syntax enable
+set background=dark
+colorscheme monokai
