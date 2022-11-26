@@ -153,3 +153,5 @@ tmux ls &> /dev/null
 if [ "$?" = 1 ]; then
   tmux
 fi
+
+[ ! -f ~/.vim/bundle/coc.nvim/build/index.js ] && yarn install --cwd ~/.vim/bundle/coc.nvim
