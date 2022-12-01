@@ -6,6 +6,8 @@ nnoremap n nzz
 nnoremap N Nzz
 nnoremap G Gzz
 nnoremap \| V$%
+nnoremap ml :vertical resize 80<CR>
+nnoremap mi :resize 30<CR>
 nnoremap s :w<CR>
 vnoremap \| $%
 
