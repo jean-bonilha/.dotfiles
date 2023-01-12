@@ -138,10 +138,11 @@ export PATH="$HOME/.local/bin:$PATH"
 export GITLAB_HOME=/srv/gitlab
 
 # Go lang environment
-export PATH=$PATH:/usr/local/go/bin
-export PATH=$PATH:/go/bin
 export GOROOT=/usr/local/go
 export GOPATH=$HOME/go
+export PATH=$PATH:/usr/local/go/bin
+export PATH=$PATH:/go/bin
+export PATH=$PATH:$GOPATH/bin
 
 [ -f ~/.fzf.bash ] && source ~/.fzf.bash
 
