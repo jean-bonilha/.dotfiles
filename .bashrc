@@ -140,6 +140,7 @@ export GITLAB_HOME=/srv/gitlab
 # Go lang environment
 export PATH=$PATH:/usr/local/go/bin
 export PATH=$PATH:/go/bin
+export PATH=$PATH:~/go/bin
 export GOROOT=/usr/local/go
 export GOPATH=$HOME/go
 
