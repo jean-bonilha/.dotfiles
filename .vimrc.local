@@ -27,7 +27,6 @@ let g:minimap_highlight='MoreMsg'
 let g:user_emmet_mode='a'    "enable all function in all mode.
 let g:user_emmet_expandabbr_key='<Tab>'
 
-let g:coc_disable_startup_warning = 1 " disable to show avoid message error
 let g:coc_user_config = {}
 let g:coc_user_config['coc.preferences.jumpCommand'] = ':SplitIfNotOpen4COC'
 
