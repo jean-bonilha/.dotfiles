@@ -159,5 +159,3 @@ if ! shopt -oq posix; then
     . /etc/bash_completion
   fi
 fi
-
-[ ! -f ~/.vim/bundle/coc.nvim/build/index.js ] && yarn install --cwd ~/.vim/bundle/coc.nvim
