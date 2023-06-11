@@ -5,22 +5,59 @@ nnoremap <Up> kzz
 nnoremap n nzz
 nnoremap N Nzz
 nnoremap G Gzz
-nnoremap <C-a> ggVG
 nnoremap \| V$%
-nnoremap <F3> :%s#\($\n\s*\)\+\%$##<CR>
-nnoremap <F4> :%s/\(^\s*$\n\)\{2,\}/\r/g<CR>
-nnoremap <F5> :%s/\s\+$//e<CR>
-nnoremap <F8> :!clear && go run %<CR>
-nnoremap <F9> :!clear && go run main.go<CR>
-nnoremap <C-m> :set ff=unix<CR>
-nnoremap so :source ~/.vimrc.local<CR>
-nnoremap sp :vsp<CR>
-nnoremap sP :sp<CR>
-nnoremap se :e<CR>
+nnoremap ml :vertical resize 80<CR>
+nnoremap mi :resize 30<CR>
+nnoremap s :w<CR>
 vnoremap \| $%
+
+execute "set <M-h>=\eh"
+execute "set <M-l>=\el"
+nnoremap <M-h> :tabprevious<CR>
+nnoremap <M-l> :tabnext<CR>
+nnoremap <F2> zr :vsplit ~/.vimrc.local<CR>
+nnoremap <F4> :!clear && echo "formating % file" && go fmt %<CR>
+nnoremap <F8> :!clear && go run %<CR>
+nnoremap <F9> :!clear && go run .<CR>
+nnoremap Q :q<CR>
 
 let g:minimap_highlight='MoreMsg'
 
 " emmet-vim settings
 let g:user_emmet_mode='a'    "enable all function in all mode.
 let g:user_emmet_expandabbr_key='<Tab>'
+
+let g:coc_user_config = {}
+let g:coc_user_config['coc.preferences.jumpCommand'] = ':SplitIfNotOpen4COC'
+
+nmap <silent> gd :call CocAction('jumpDefinition', 'vsplit')<CR>
+nmap <silent> GD :call CocAction('jumpDefinition', 'split')<CR>
+nmap <silent> gt :call CocAction('jumpDefinition', 'tabe')<CR>
+nmap <silent> ge :call CocAction('jumpDefinition', 'e')<CR>
+
+nmap <silent> so :source ~/.vimrc.local<CR>
+nmap <silent> sp :vsplit<CR>
+nmap <silent> sP :split<CR>
+nmap <silent> SP :split<CR>
+
+nmap <silent> st :tabnew<CR>
+nmap <silent> nt :tabnew<CR>
+
+nmap <silent> bp :bprevious<CR>
+nmap <silent> bn :bnext<CR>
+
+nmap <silent> t4 :set autoindent noexpandtab tabstop=4 shiftwidth=4 ts=4 sw=4<CR>
+nmap <silent> t2 :set autoindent noexpandtab tabstop=2 shiftwidth=2 ts=2 sw=2<CR>
+
+nmap <silent> se :e %<CR>
+nmap <silent> ; :e %<CR>
+nmap <silent> sf :e %<CR>
+
+nmap <silent> ga :!clear && git a % && echo "Arquivo % adicionado a stage area."<CR>
+nmap <silent> GA :!clear && git a . && echo "Todos os arquivos adicionados a stage area."<CR>
+nmap <silent> gs :!clear && git st<CR>
+nmap <silent> gc :!clear && git ci -m "
+
+syntax enable
+set background=dark
+colorscheme monokai
