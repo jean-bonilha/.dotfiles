@@ -1,0 +1,33 @@
+[branch name]([tag]):[subject]
+
+[optional body]
+
+# ** Tag
+# Must be one of the following:
+# * commit:[index] - Make any commit with index in any branch
+# * merge [tag|branch] - Make a merge from tag or branch
+# * release - Build release commit
+# * revert - Reverting things
+
+# ** Subject
+# The subject contains a succint description of the change:
+# * Use the imperative, present tense: "change" not "changed" nor "changes"
+# * No dot (.) at the end.
+
+# ** Body
+# Just as in the subject, use the imperative, present tense: "change" not "changed" nor "changes".
+# The body should include the motivation for the change and contrast this with previous behavior.
+
+# ** Rules
+# The 7 rules of a great commit message
+#    1. Separate subject from body with a blank line
+#    2. Limit the subject line to 50 characters
+#    3. Summary in present tense. Not capitalized
+#    4. Do not end the subject line with a period
+#    5. Use the imperative mood in the subject line
+#    6. Wrap the body at 72 characters
+#    7. Use the body to explain what and why vs. how
+
+# ** Reference
+# Patterns for writing better git commit messages
+# Link: https://dev.to/hlderburato/paterns-for-writing-better-git-commit-messages-4ba0

@@ -1,6 +1,8 @@
 [user]
 	name 	= Jean Bonilha
 	email 	= jeanbonilha.webdev@gmail.com
+[core]
+	editor  = vim
 [alias]
 	a  = add
 	ap = add --patch
@@ -89,6 +91,5 @@
 	sl = stash list
 	sa = stash apply
 	ss = stash save
-[core]
-	autocrlf = input
-	whitespace = cr-at-eol
+[commit]
+	template = ~/.COMMIT_EDITMSG

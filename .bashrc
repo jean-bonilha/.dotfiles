@@ -132,9 +132,14 @@ export NVM_DIR="$HOME/.nvm"
 export EDITOR=vim
 export VISUAL=vim
 export PATH="$(yarn global bin):$PATH"
-
+export PATH="$HOME/.local/bin:$PATH"
 export PATH=$HOME/go/bin:$PATH
 export PATH=$PATH:/usr/local/go/bin
 export GITLAB_HOME=/srv/gitlab
 
 [ -f ~/.fzf.bash ] && source ~/.fzf.bash
+
+tmux ls &> /dev/null
+if [ "$?" = 1 ]; then
+  tmux
+fi
