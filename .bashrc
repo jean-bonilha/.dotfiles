@@ -149,6 +149,8 @@ export GOPATH=$HOME/go
 tmux ls &> /dev/null
 if [ "$?" = 1 ]; then
   tmux
+else
+  mux
 fi
 
 # enable bash completion in interactive shells
